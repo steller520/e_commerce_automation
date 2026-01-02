@@ -1,4 +1,0 @@
-user_id,full_name,email,password_hash,user_type
-1.0,Rahul Sharma,rahul@example.com,hashed_pw_rahul,registered
-2.0,Priya Verma,priya@example.com,hashed_pw_priya,registered
-,Guest User,,,guest

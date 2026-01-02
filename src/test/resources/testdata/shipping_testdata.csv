@@ -1,0 +1,9 @@
+TestCase,ShippingMethod,MinCost,MaxCost,ExpectedResult
+Standard Shipping Test,standard,0,100,success
+Express Shipping Test,express,50,200,success
+Next Day Shipping Test,next_day,100,300,success
+Free Shipping Test,free,0,0,success
+High Value Free Shipping,free,0,0,success
+Standard Low Cost,standard,0,50,success
+Express Mid Cost,express,75,150,success
+Invalid Method,invalid,0,0,failure

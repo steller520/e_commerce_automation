@@ -1,0 +1,13 @@
+TestCase,CardNumber,HolderName,Month,Year,CVV,ExpectedResult
+Valid Visa Card,4111111111111111,Test User,12,2025,123,success
+Valid Mastercard,5555555555554444,Test User,06,2026,456,success
+Invalid Card Short,123456,Test User,12,2025,123,failure
+Invalid Card Letters,ABCD1234EFGH5678,Test User,12,2025,123,failure
+Empty Card Number,,Test User,12,2025,123,failure
+Expired Card Past,4111111111111111,Test User,01,2020,123,failure
+Invalid CVV Short,4111111111111111,Test User,12,2025,12,failure
+Invalid CVV Letters,4111111111111111,Test User,12,2025,ABC,failure
+Empty CVV,4111111111111111,Test User,12,2025,,failure
+Declined Card,4000000000000002,Test User,12,2025,123,failure
+Card Processing Error,4000000000000119,Test User,12,2025,123,failure
+Insufficient Funds,4000000000009995,Test User,12,2025,123,failure

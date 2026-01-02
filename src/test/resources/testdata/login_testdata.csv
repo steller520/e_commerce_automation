@@ -1,0 +1,7 @@
+TestCase,Email,Password,ExpectedResult
+Valid Login,test@example.com,password123,success
+Invalid Email,invalid@test.com,password123,failure
+Invalid Password,test@example.com,wrongpass,failure
+Empty Email,,password123,failure
+Empty Password,test@example.com,,failure
+Special Characters,test+tag@example.com,P@ssw0rd!,success

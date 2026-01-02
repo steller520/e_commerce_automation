@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="AutomationExercise Suite" verbose="1" parallel="false">
-  <test name="UI Tests">
-    <packages>
-      <package name="com.e_commerce.tests"/>
-    </packages>
+<suite name="E-Commerce Checkout Test Suite" verbose="1" parallel="classes" thread-count="3">
+  
+  <listeners>
+    <listener class-name="com.e_commerce.listeners.TestResultListener"/>
+    <listener class-name="com.e_commerce.listeners.ExtentReportListener"/>
+  </listeners>
+  
+  <!-- Critical Checkout Flow Tests -->
+  <test name="Checkout Flow Tests">
+    <classes>
+      <class name="com.e_commerce.tests.FullCheckoutFlowTest"/>
+      <class name="com.e_commerce.tests.CouponValidationTest"/>
+      <class name="com.e_commerce.tests.CheckoutNavigationTest"/>
+      <class name="com.e_commerce.tests.AddressValidationTest"/>
+      <class name="com.e_commerce.tests.ShippingMethodTest"/>
+      <class name="com.e_commerce.tests.PaymentFlowTest"/>
+      <class name="com.e_commerce.tests.PaymentFailureTest"/>
+      <class name="com.e_commerce.tests.OrderCreationTest"/>
+    </classes>
   </test>
+  
+  <!-- Cart & Product Tests -->
+  <test name="Cart and Product Tests">
+    <classes>
+      <class name="com.e_commerce.tests.AddProductToCartTest"/>
+      <class name="com.e_commerce.tests.AddMultipleProductsTest"/>
+      <class name="com.e_commerce.tests.CartRemoveItemTest"/>
+      <class name="com.e_commerce.tests.CartPersistenceTest"/>
+      <class name="com.e_commerce.tests.ProductsSearchTest"/>
+      <class name="com.e_commerce.tests.ProductSearchDataDrivenTest"/>
+      <class name="com.e_commerce.tests.ProductDetailsTest"/>
+    </classes>
+  </test>
+  
+  <!-- User & Session Tests -->
+  <test name="User and Session Tests">
+    <classes>
+      <class name="com.e_commerce.tests.LoginNavigationTest"/>
+      <class name="com.e_commerce.tests.NavigationTest"/>
+      <class name="com.e_commerce.tests.HeaderNavigationTest"/>
+    </classes>
+  </test>
+  
+  <!-- Database Validation Tests -->
+  <test name="Database Tests">
+    <classes>
+      <class name="com.e_commerce.tests.DatabaseValidationTest"/>
+      <class name="com.e_commerce.tests.DbUtilH2Test"/>
+      <class name="com.e_commerce.tests.CsvUtilTest"/>
+      <class name="com.e_commerce.tests.ExcelUtilTest"/>
+    </classes>
+  </test>
+  
+  <!-- Additional Features -->
+  <test name="Additional Features">
+    <classes>
+      <class name="com.e_commerce.tests.HomePageTest"/>
+      <class name="com.e_commerce.tests.SubscriptionTest"/>
+      <class name="com.e_commerce.tests.ContactUsTest"/>
+    </classes>
+  </test>
+  
+  <!-- API Tests - C6 Requirement -->
+  <test name="API Tests">
+    <classes>
+      <class name="com.e_commerce.api.ProductAPITest"/>
+      <class name="com.e_commerce.api.UserAPITest"/>
+      <class name="com.e_commerce.api.CartAPITest"/>
+      <class name="com.e_commerce.api.OrderAPITest"/>
+      <class name="com.e_commerce.api.PaymentAPITest"/>
+      <class name="com.e_commerce.api.CouponAPITest"/>
+    </classes>
+  </test>
+  
 </suite>

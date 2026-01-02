@@ -1,4 +1,0 @@
-product_id,name,sku,price,stock_qty,is_active
-1,Wireless Mouse,MOUSE001,799.0,50,True
-2,Mechanical Keyboard,KB001,2499.0,30,True
-3,USB-C Charger,CHARGER001,999.0,0,True

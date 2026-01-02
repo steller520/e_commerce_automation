@@ -51,4 +51,16 @@ public class ProductsPage extends BasePage {
     public boolean hasResults() {
         return productCards != null && !productCards.isEmpty();
     }
+
+    public void addFirstProductToCart() {
+        // Click the first visible 'Add to cart' button with scroll + JS fallback
+        WebElement addBtn = productCards.get(0).findElement(org.openqa.selenium.By.cssSelector("a.add-to-cart"));
+        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", addBtn);
+        try {
+            waitClickable(addBtn);
+            addBtn.click();
+        } catch (Exception e) {
+            ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].click();", addBtn);
+        }
+    }
 }

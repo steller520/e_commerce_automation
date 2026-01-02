@@ -1,0 +1,7 @@
+CouponCode,Description,ExpectedResult,DiscountPercent
+SAVE10,Valid 10% discount,success,10
+SAVE20,Valid 20% discount,success,20
+EXPIRED2023,Expired coupon,failure,0
+INVALID123,Invalid coupon code,failure,0
+WELCOME15,Welcome discount 15%,success,15
+,,Empty coupon,failure,0

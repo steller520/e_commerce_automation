@@ -22,7 +22,7 @@ public abstract class BasePage {
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    protected void waitClickable(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
+    protected WebElement waitClickable(WebElement element) {
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 }
