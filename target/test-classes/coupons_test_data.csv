@@ -1,0 +1,4 @@
+coupon_id,code,discount_type,discount_value,min_cart_value,max_uses_per_user,status
+1,NEWUSER10,PERCENT,10,500,1,ACTIVE
+2,FLAT100,FLAT,100,1000,5,ACTIVE
+3,EXPIRED50,FLAT,50,500,1,EXPIRED

@@ -1,20 +1,14 @@
 package com.e_commerce;
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 /**
- * Unit test for simple App.
+ * Placeholder TestNG test to keep package compile-clean.
  */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
+public class AppTest {
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void placeholder() {
+        Assert.assertTrue(true);
     }
 }

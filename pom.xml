@@ -33,17 +33,11 @@
       <version>5.7.0</version>
     </dependency>
 
-    <!-- JUnit 5 -->
+    <!-- TestNG -->
     <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>5.10.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.10.1</version>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.9.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -55,6 +49,9 @@
         <version>3.2.5</version>
         <configuration>
           <useModulePath>false</useModulePath>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
         </configuration>
       </plugin>
       <plugin>

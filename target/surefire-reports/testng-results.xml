@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-02T17:50:39 IST" name="AutomationExercise Suite" finished-at="2026-01-02T17:52:07 IST" duration-ms="88368">
+    <groups>
+    </groups>
+    <test started-at="2026-01-02T17:50:39 IST" name="UI Tests" finished-at="2026-01-02T17:52:07 IST" duration-ms="88368">
+      <class name="com.e_commerce.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.e_commerce.tests.HomePageTest@692f203f]" started-at="2026-01-02T17:50:39 IST" name="setUp" finished-at="2026-01-02T17:50:40 IST" duration-ms="1555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="homePageLoadsSuccessfully()[pri:0, instance:com.e_commerce.tests.HomePageTest@692f203f]" started-at="2026-01-02T17:50:40 IST" name="homePageLoadsSuccessfully" description="Verify home page is visible successfully" finished-at="2026-01-02T17:50:47 IST" duration-ms="6310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageLoadsSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.e_commerce.tests.HomePageTest@692f203f]" started-at="2026-01-02T17:50:47 IST" name="tearDown" finished-at="2026-01-02T17:50:47 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.e_commerce.tests.HomePageTest -->
+      <class name="com.e_commerce.tests.ProductsSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.e_commerce.tests.ProductsSearchTest@385c9627]" started-at="2026-01-02T17:50:59 IST" name="setUp" finished-at="2026-01-02T17:51:00 IST" duration-ms="930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchProductsShowsResults()[pri:0, instance:com.e_commerce.tests.ProductsSearchTest@385c9627]" started-at="2026-01-02T17:51:00 IST" name="searchProductsShowsResults" description="Search products and verify results are displayed" finished-at="2026-01-02T17:52:07 IST" duration-ms="66513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductsShowsResults -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.e_commerce.tests.ProductsSearchTest@385c9627]" started-at="2026-01-02T17:52:07 IST" name="tearDown" finished-at="2026-01-02T17:52:07 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.e_commerce.tests.ProductsSearchTest -->
+      <class name="com.e_commerce.tests.LoginNavigationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.e_commerce.tests.LoginNavigationTest@6989da5e]" started-at="2026-01-02T17:50:47 IST" name="setUp" finished-at="2026-01-02T17:50:48 IST" duration-ms="1023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="navigateToLoginShowsForm()[pri:0, instance:com.e_commerce.tests.LoginNavigationTest@6989da5e]" started-at="2026-01-02T17:50:48 IST" name="navigateToLoginShowsForm" description="Navigate to Login page and verify form is visible" finished-at="2026-01-02T17:50:59 IST" duration-ms="11110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginShowsForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.e_commerce.tests.LoginNavigationTest@6989da5e]" started-at="2026-01-02T17:50:59 IST" name="tearDown" finished-at="2026-01-02T17:50:59 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.e_commerce.tests.LoginNavigationTest -->
+    </test> <!-- UI Tests -->
+  </suite> <!-- AutomationExercise Suite -->
+</testng-results>

@@ -1,0 +1,9 @@
+com\e_commerce\tests\LoginNavigationTest.class
+com\e_commerce\pages\HomePage.class
+com\e_commerce\tests\HomePageTest.class
+com\e_commerce\AppTest.class
+com\e_commerce\pages\BasePage.class
+com\e_commerce\tests\ProductsSearchTest.class
+com\e_commerce\pages\ProductsPage.class
+com\e_commerce\pages\LoginPage.class
+com\e_commerce\core\BaseTest.class

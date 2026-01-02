@@ -1,0 +1,5 @@
+payment_id,payment_method,amount,status
+1,CARD,3398.0,SUCCESS
+2,UPI,2499.0,FAILED
+3,WALLET,999.0,TIMEOUT
+4,COD,799.0,PENDING
